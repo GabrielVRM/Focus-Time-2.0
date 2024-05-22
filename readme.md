@@ -3,7 +3,9 @@
 > um software, que irá cronometrar um certo intervalo de tempo!
 uma landingPage, com o cronometro do lado esquerdo e quatro cards do lado direito, onde cada card tera uma funcionalidade especifica.
 
-Cada card que se encontra do lado direito, quando selecionado, vai mudar de cor e emitir um som diferente. Os sons você pode encontrar, respectivamente, nos links abaixo:
+- Foi adicionado um dark-mode no software.
+
+- Cada card que se encontra do lado direito, quando selecionado, vai mudar de cor e emitir um som diferente. Os sons você pode encontrar, respectivamente, nos links abaixo:
 
 Chuva: https://drive.google.com/file/d/1CRHkV72WUMdcqec5GT_KdsqFz0z3VAOA/view
 
