@@ -7,6 +7,8 @@ uma landingPage, com o cronometro do lado esquerdo e quatro cards do lado direit
 
 - Cada card que se encontra do lado direito, quando selecionado, vai mudar de cor e emitir um som diferente. Os sons você pode encontrar, respectivamente, nos links abaixo:
 
+- software responsivo, com grid.
+
 Chuva: https://drive.google.com/file/d/1CRHkV72WUMdcqec5GT_KdsqFz0z3VAOA/view
 
 Floresta:https://drive.google.com/file/d/1CRHkV72WUMdcqec5GT_KdsqFz0z3VAOA/view
