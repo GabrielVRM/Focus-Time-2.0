@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dark #toggle-mode > .ph-moon {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+:root {
+  font-size: 62.5%;
+
+  font-family: "Roboto", sans-serif;
+
+  --bg-color: #ffffff;
+  --text-color: #323238;
+  --card-color: #e1e1e6;
+  --card-hover: #02799d;
+}
+
+html.dark {
+  --text-color: #e5e5e5;
+  --bg-color: #323238;
+  --card-color: #e1e1e6;
+  --card-hover: #02799d;
+}
+.running .ph-play-circle,
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle {
+  display: none;
+}
+#app {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+
+  grid-template-areas:
+    "mode  mode"
+    "timer card"
+    "control card";
+
+  grid-template-rows: max-content 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+#toggle-mode {
+  grid-area: mode;
+  justify-self: end;
+
+  font-size: 5rem;
+  border: none;
+  background-color: var(--bg-color);
+
+  font-size: 6rem;
+  padding: 5rem 15rem 0rem 0rem;
+}
+
+#toggle-mode > span {
+  cursor: pointer;
+  border: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body {
+  background: var(--bg-color);
+}
+
+.music-on {
+  display: none;
+}
+
+.timer {
+  grid-area: timer;
+
+  place-self: end;
+  font-size: 12rem;
+  margin: 0 5rem 0 0rem;
+
+  color: var(--text-color);
+}
+
+.controls {
+  font-size: 6rem;
+
+  grid-area: control;
+  place-self: start;
+  align-items: center;
+  margin: 0 10rem 0 0rem;
+
+  justify-self: end;
+}
+.controls > button {
+  font-size: 6rem;
+
+  border: none;
+  background-color: var(--bg-color);
+
+  color: var(--text-color);
+
+  cursor: pointer;
+
+  &:hover {
+  }
+}
+
+.card {
+  grid-area: card;
+
+  place-self: center;
+  justify-self: start;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.6rem;
+  margin: 0 0 0 5rem;
+}
+
+.card > button {
+  padding: 4rem 4rem;
+  font-size: 10rem;
+
+  border: none;
+  border-radius: 1.6rem;
+
+  background: var(--card-color);
+  cursor: pointer;
+}
+.card button:hover {
+  background: var(--card-hover);
+  color: white;
+}
+
+@media (max-width: 800px) {
+  #app {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+
+    grid-template-areas:
+      "mode"
+      "timer"
+      "control"
+      "card";
+
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: max-content;
+
+    place-content: center;
+  }
+
+  #toggle-mode {
+    grid-area: mode;
+    justify-self: end;
+
+    font-size: 5rem;
+    border: none;
+    background-color: var(--bg-color);
+
+    font-size: 5rem;
+    padding: 0.1rem 0rem 0rem 0rem;
+  }
+
+  .timer {
+    grid-area: timer;
+
+    place-self: center;
+
+    font-size: 12rem;
+
+    color: var(--text-color);
+  }
+
+  .controls {
+    font-size: 6rem;
+
+    grid-area: control;
+    place-self: center;
+  }
+
+  .card {
+    grid-area: card;
+
+    place-self: center;
+    justify-self: center;
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .card > button {
+    padding: 4rem 4rem;
+    font-size: 10rem;
+
+    border: none;
+    border-radius: 1.6rem;
+
+    background: var(--card-color);
+    cursor: pointer;
+  }
+}

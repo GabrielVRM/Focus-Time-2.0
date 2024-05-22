@@ -1,0 +1,24 @@
+{
+  "name": "focus_timerv2",
+  "version": "1.0.0",
+  "description": "> um software, que irá cronometrar um certo intervalo de tempo!\r uma landingPage, com o cronometro do lado esquerdo e quatro cards do lado direito, onde cada card tera uma funcionalidade especifica.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielVRM/FocusTimeV2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielVRM/FocusTimeV2/issues"
+  },
+  "homepage": "https://github.com/GabrielVRM/FocusTimeV2#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
